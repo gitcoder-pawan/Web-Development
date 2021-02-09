@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 500px;
+            border: 5px solid red;
+            /* border-spacing: 10px 20px; */
+            border-collapse: collapse;
+            /* empty-cells: hide; use to hide empty-cells */
+            table-layout: auto;
+        }
+
+        /* tr:hover{background: grey;} */
+        tr:nth-child(even) {
+            background: rgb(100, 100, 231);
+        }
+        tr:nth-child(odd) {
+            background: rgb(31, 228, 57);
+
+        td,
+        th {
+            /* vertical-align: top; */
+            /* vertical-align: middle; */
+            vertical-align: bottom;
+            padding: 5px 10px;
+        }
+
+        caption {
+            caption-side: bottom;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>table properties</h1>
+    <table>
+        <caption>table representation</caption>
+        <tr>
+            <th>first</td>
+            <th>last</td>
+            <th>title</td>
+            <th>age</td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi aspernatur reiciendis ea possimus maxime
+                in mollitia quasi ullam dicta nisi!
+            </td>
+            <td></td>
+
+            <td>3</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt consectetur minus quae quam?
+                Consequatur laborum, delectus consequuntur placeat voluptatum quas aperiam! Tempore consequuntur minima
+                beatae veritatis! Inventore iste pariatur ullam?</td>
+            <td>5</td>
+            <td>6</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>3</td>
+            <td>1</td>
+        </tr>
+    </table>
+</body>
+
+</html>
