@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            font-size: 40px;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+            /* margin: -140px; */
+            background: tomato;
+        }
+        .box:hover{ animation: sample 2s linear 3 reverse;
+        animation-play-state: running;}
+
+        @keyframes sample {
+            0% {
+                border: 2px solid red;
+                background: rgb(41, 219, 41);
+                border-radius: 10px;
+            }
+
+            100% {
+                border: 10px solid rgb(12, 2, 2);
+                background: rgb(88, 41, 219);
+                border-radius: 10px;
+                color: rgb(247, 10, 10);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">welcome</div>
+</body>
+
+</html>
