@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            box-sizing: border-box;
+            margin: 100px;
+            border: 20px solid grey;
+            background: red;
+        }
+
+        #box { 
+            border-image: linear-gradient(to right , green,yellow) 35 40  round;
+            /* border-image-source: url(images/IMG_20190223_235143.jpg);
+            border-image-slice: 100;
+            border-image-repeat: stretch repeat; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box"></div>
+</body>
+
+</html>
