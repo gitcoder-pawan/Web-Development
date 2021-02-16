@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width:100%;
+            /* border:5px solid black; */
+            background: grey;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: [header-start]120px[header-end menu-start]50px[menu-end box-start]70px[box-end content-start]400px[content-end footer-start]40px[footer-end];
+            grid-template-columns: repeat(5,[col-start]1fr[col-end]);
+           
+        }
+        .item{
+            /* border:2px solid yellow;  */
+        }
+        .header{
+            grid-row: header-start/ header-end;
+            grid-column:col-start 1/ -1 ;
+            background: red;
+            font-size: 40px;
+            color:aliceblue;
+        }
+        .menu{
+            grid-row: menu-start/ menu-end;
+            grid-column:col-start 1/ -1 ;
+            background: blueviolet;
+            font-size: 30px;
+            color:aliceblue;
+            text-align: center;
+        }
+        .box1{
+            background: crimson;
+            grid-column: col-start 1/ col-end 2;
+        }
+        .box2{
+            background: yellow;
+            grid-column: col-start 3/ col-end 4;
+        }
+        .sidebar{
+            grid-row: box-start/content-end;
+            background: white;
+        }
+        .content{
+            grid-row: content-start/ content-end;
+            grid-column:col-start 1/ col-end 4;
+            background: rgb(43, 183, 226);
+            font-size: 30px;
+            color:aliceblue;
+        }
+        .footer{
+            grid-row: footer-start/ footer-end;
+            grid-column:col-start 1/ -1;
+            background: rgb(43, 226, 125);
+            font-size: 30px;
+            color:aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item menu">menu</div>
+        <div class="item box1">box1</div>
+        <div class="item box2">box2</div>
+        <div class="item content">content</div>
+        <div class="item sidebar">sidebar</div>
+        <div class="item footer">footer</div>
+    </div>
+</body>
+</html>

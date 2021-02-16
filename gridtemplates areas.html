@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        * {
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            width: 100%;
+            /* border:5px solid black; */
+            background: grey; 
+            display: grid;
+            grid-template-rows:  120px 50px 70px 400px 40px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "header header header"
+                "menu menu menu""box1 box2 sidebar""content content sidebar""footer footer footer";
+        }
+
+        .header {
+            background: red;
+            grid-area: header;
+        }
+
+        .menu {
+            background: purple;
+            grid-area: menu;
+        }
+
+        .box1 {
+            background: yellow;
+            grid-area: box1; margin: 10px;
+        }
+
+        .box2 {
+            background: crimson;
+            grid-area: box2; margin: 10px;
+        }
+
+        .sidebar {
+            background: white;
+            grid-area: sidebar;
+            margin: 10px;
+        }
+
+        .content {
+            background: rgb(69, 178, 241);
+            grid-area: content; margin: 10px;
+        }
+
+        .footer {
+            background: green;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item header">header</div>
+        <div class="item menu">menu</div>
+        <div class="item box1">box1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, fugiat! Magnam alias adipisci consequatur .</div>
+        <div class="item box2">box2</div>
+        <div class="item content">content</div>
+        <div class="item sidebar">sidebar</div>
+        <div class="item footer">footer</div>
+    </div>
+</body>
+
+</html>
