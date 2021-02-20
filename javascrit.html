@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        /* text_decoration */
+
+        /* div{margin:30px 50px;
+        padding:20px;
+        border:2px solid blue;
+        width:1300px;
+        text-align:justify;
+        text-align-last: right;
+        text-transform:uppercase;
+        text-indent: 100px;
+        word-spacing:10px;
+        letter-spacing:5px;
+        text-decoration: line-through red dotted   ;} */
+
+        /* wordwrap */
+        /* #one{ border:1px solid blue;
+        width:200px;
+        word-wrap: break-word;
+        word-break: break-all;
+        } */
+
+        /* text_shadow */
+
+        div{ 
+            border:2px solid blue;
+           
+            margin:50px auto; 
+            padding:20px;
+            font-size: 30px;
+            max-width: 1000px;
+           
+            font-weight: bold;
+            text-shadow: 3px -4px 5px red; 
+            /* wordwrap and text-overflow */
+            /* white-space: nowrap; */
+            /* overflow: hidden; */
+            /* text-overflow: ellipsis;  */
+            /* writing-mode */
+            /* writing-mode: vertical-rl; */
+        }  
+        p{font-family: 'Satisfy', cursive;}
+        h2{font-family: 'Oswald', sans-serif;}
+    </style> 
+</head> 
+<body> 
+    <!-- <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias qui consectetur delectus atque minus? Fuga atque maxime facilis mollitia suscipit amet officia rerum minima dolorum laudantium voluptatem illo eaque corrupti, expedita nam earum iusto asperiores molestiae eligendi veritatis debitis tempore? Fugiat, ipsa magni? Odio dolor et porro dicta facere quam ex amet molestiae, cupiditate neque nihil labore facilis non iusto praesentium delectus distinctio nostrum voluptatibus mollitia laudantium dolorem iure atque doloremque quidem. Dicta molestiae ratione in vero est esse quae exercitationem. Esse reprehenderit tenetur voluptates odio ipsum corporis laudantium earum, optio iusto sequi alias officiis accusantium. Eaque dicta ab, dolor totam veniam eius nemo minima, eos ad, asperiores exercitationem quaerat itaque magni nostrum alias? Voluptates illum laboriosam a id exercitationem quod quo laudantium, similique ipsam enim. Laboriosam blanditiis culpa qui natus error dicta inventore provident dolorem eveniet odit quo quisquam rem, non nostrum nam optio. Dolorem aut repellat nisi autem porro laboriosam deleniti, quod tenetur, mollitia, eum qui! Praesentium dignissimos aut quis autem obcaecati at excepturi consectetur nostrum. Quae nesciunt eligendi ullam obcaecati doloremque modi veniam aut, fuga quibusdam consectetur, explicabo, eveniet nostrum at culpa repellendus ab inventore harum tempora recusandae reiciendis expedita praesentium voluptates soluta eos? Nesciunt, unde laborum!</div> -->
+    <!-- <div id="one">aaaaaaaaaaaaaaaaabbbbbbbbbbbbcccccccccccccddddddddddddddeeeeeeeeeeeeefffffffffffff</div> -->
+    <div id="div1"><h2 class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sequi.</h2>
+        <p class="para1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut beatae, amet alias dolore sequi, animi adipisci pariatur dicta sint consequatur quisquam laudantium impedit veniam et id magni est perspiciatis cumque consequuntur necessitatibus esse reprehenderit praesentium illum iure. Quos commodi neque labore nesciunt beatae culpa doloremque, ipsa sed doloribus! Animi, corrupti!</p></div>
+
+
+
+
+        <script>
+            
+            // string formatting
+
+            /*
+            let var2="thank you";
+            let var1=`don't touch my bag"this is my bsg ${var2}"
+            i m sry for this`;
+            console.log(var1+`${var2}`);
+            console.log('5'*5, "5"+5,(5+'5')*5)
+             */
+
+            // if else
+           
+           /* 
+           let var1=2;
+            let var2=1;
+            if(var1>var2){
+                console.log("greater");
+            }
+            else if(var1===var2){
+                console.log("equal");
+            }
+            else{
+                console.log("smaller")
+            }
+            */
+
+            // switch
+
+            /*
+             let ans=5;
+             switch(ans){
+                 case 1:
+                     console.log("javascript");
+                     break;
+                     case 2:
+                     console.log("python");
+                     break;
+                     case 3:
+                     console.log("java");
+                     break;
+                     case 4:
+                     console.log("php");
+                     break;
+                     default:
+                     console.log("incorrect option");
+                     break;
+             } 
+             */
+
+            //   for loop
+             /*
+            let arr=[1,2,3,4,5]
+            for ( let element in arr){
+                element+=1
+                console.log(element)
+            }
+            for ( let i of arr){
+                i+=1
+                console.log(i)
+            } 
+            */
+
+            // function
+
+         /*   const f1=function func1(){
+                console.log("my fist function");
+            }
+
+            const f2=function func2(arg1){
+                console.log(`my fist function with arg ${arg1}`);
+            }
+            const f3=function func3(arg1,arg2="default"){
+                console.log(`my fist function with arg ${arg1} and ${arg2}`);
+            }
+            //  function as object
+            f1();
+            f2(5);
+            f3("pawan") */
+
+            // arrow notation
+
+        //    const fun1= ()=> `hello world`;   /*fnc with no paramater */
+            // const fun2= var1=> `hello world ${var1}`;/*fnc with 1 paramater */
+            // const fun3 =(var2,var3)=> {/*fnc with 2 paramater & more than one line */
+                // let var_=var2+var3;
+                // return var_;
+            // }
+            // let var4= [1,2,3] ;
+            // const fun4=(name,...args)=>{       /*rest operator ...  --> while fnc defining*/  
+                // let sum=0;
+                // for (let i in args){
+                    // sum+=args[i];
+                // }
+                // return `${name} - ${args} -${sum}`;
+            // }
+
+            // console.log( fun1());
+            // console.log( fun2(123));
+            // console.log( fun3(1,2));
+            // console.log( fun4(1, 1,2,3));
+            // console.log(fun4('pawan',...var4));   /*spread operator ... -->while fnc calling*/
+
+            // splice and slice method array method
+
+           /* let arr=[1,2,3,4,5]
+            console.log(arr.slice(1,5))
+            console.log(arr.slice(-1))
+            arr.splice(1,0,2,5)
+            console.log(arr)
+            arr.splice(2,3)
+            console.log(arr) */
+
+            // destructring objects nd array
+
+            // let obj={a:1,b:2,c:3};
+            // let{a,b,c}=obj; /*while destructring var name shld be same as properties of objects */
+            // let[a1,b1,c1]=[11,22,33];
+            // console.log(`${a}-${b}-${c}`)
+            // console.log(`${a1}-${b1}-${c1}`)
+
+            // DOM
+
+            var element1;
+            element1=document;
+            console.log(element1);
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+        </script>
+</body>
+</html>
